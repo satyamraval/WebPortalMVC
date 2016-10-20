@@ -1,0 +1,496 @@
+﻿<div class="content-wrapper" style="min-height: 600px;">
+    <section class="content-header">
+        <h1>Search</h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+            <li><a href="#">Search</a></li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Resources box -->
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Types of Resources</h3>
+                        <div class="box-tools">
+                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body" style="display: block;">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Dataset
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Maps and Graphics
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Services
+                                    </label>
+                                </div>
+                            </li>
+                            @*<li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Collection
+                                    </label>
+                                </div>
+                            </li>*@
+                            @*<li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Map
+                                    </label>
+                                </div>
+                            </li>*@
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- EOF Resources box -->
+
+                <!-- Topics box -->
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Topics</h3>
+                        <div class="box-tools">
+                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body" style="display: block;">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Boundaries
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Inland Water
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Geoscientific
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Hydraulics
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- EOF Topics box -->
+                <!-- Keywords box -->
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Keywords</h3>
+                        <div class="box-tools">
+                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box-body" style="display: block;">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Boundaries
+                                    </label>
+                                </div>
+                            </li>
+                            @*<li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Boundaries-Administrator
+                                    </label>
+                                </div>
+                            </li>*@
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Land-Ownerships
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Geonetworks
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- EOF Keywords box -->
+
+            </div>
+            <div class="col-md-9">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Search</h3>
+                        <div class="box-tools">
+                            <div class="has-feedback">
+                                <input class="form-control input-sm" type="text" placeholder="Search">
+                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Search Attributes</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <label>Categories</label>
+                                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                <option >All</option>
+                                                <option>Application</option>
+                                                <option>Case Studies</option>
+                                                <option selected="selected">Dataset</option>
+                                                <option>Directories</option>
+                                                <option>Maps and Graphics</option>
+                                                <option>Physical Samples</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Keywords</label>
+                                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                <option selected="selected">All</option>
+                                                <option>India</option>
+                                                <option>Sri Lanka</option>
+                                                <option>Australia</option>
+                                                <option>Hydrology</option>
+                                                <option>Land Use</option>
+                                                <option>Land Ownership</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Resources Created Range</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <label>Resources Created Range:</label>
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <input id="resource_range" class="form-control pull-right" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Records Created Range</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <label>Records Created Range:</label>
+                                            <div class="input-group">
+                                                <div class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                                <input id="records_range" class="form-control pull-right" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <!-- result -->
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Result 1</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Download">
+                                                <i class="ion ion-ios-cloud-download-outline"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Share">
+                                                <i class="ion ion-share"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Link">
+                                                <i class="ion ion-link"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Edit">
+                                                <i class="ion ion-edit"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Show Layers">
+                                                <i class="ion ion-navicon"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="ion ion-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <img class="img-responsive pad" alt="Photo" src="/images/site/nlrmp.png">
+                                        <h4>District Boundaries Gujarat</h4>
+                                        <p>District boundaries of Gujarat state resurvey activity in Gujarat under DILRM Program</p>
+                                        <button class="btn btn-default btn-xs" type="button">
+                                            <i class="fa fa-share"></i>
+                                            Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- eof result -->
+
+                            <!-- result -->
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Result 2</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Download">
+                                                <i class="ion ion-ios-cloud-download-outline"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Share">
+                                                <i class="ion ion-share"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Link">
+                                                <i class="ion ion-link"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Edit">
+                                                <i class="ion ion-edit"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Show Layers">
+                                                <i class="ion ion-navicon"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="ion ion-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <p class="text-center"><img class="img-responsive pad" alt="Photo" src="/images/site/hydrolics.png"></p>
+                                        <h4>Hydraulic Map and Dataset in SMC Boundary</h4>
+                                        <p>Repository regarding hydraulic in SMC Map and Dataset. Dataset devides SMC based on hydrological characteristics</p>
+                                        <button class="btn btn-default btn-xs" type="button">
+                                            <i class="fa fa-share"></i>
+                                            Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- eof result -->
+
+                            <!-- result -->
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Result 3</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Download">
+                                                <i class="ion ion-ios-cloud-download-outline"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Share">
+                                                <i class="ion ion-share"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Link">
+                                                <i class="ion ion-link"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Edit">
+                                                <i class="ion ion-edit"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Show Layers">
+                                                <i class="ion ion-navicon"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="ion ion-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <p class="text-center"><img class="img-responsive pad" alt="Photo" src="/images/site/landallotment.png" style="display:inline;"></p>
+                                        <h4>Land Allotment Data - Gujarat</h4>
+                                        <p>Land allotment dataset is the set of locality boundaries for the state of Gujrat as defined by Local Government and registered by the land revenue department. 
+                                            The boundaries are aligned to DILRMP resurvey boundary.</p>
+                                        <button class="btn btn-default btn-xs" type="button">
+                                            <i class="fa fa-share"></i>
+                                            Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- eof result -->
+
+                            <!-- result -->
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Result 4</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Download">
+                                                <i class="ion ion-ios-cloud-download-outline"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Share">
+                                                <i class="ion ion-share"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Link">
+                                                <i class="ion ion-link"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Edit">
+                                                <i class="ion ion-edit"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Show Layers">
+                                                <i class="ion ion-navicon"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="ion ion-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <p class="text-center"><img class="img-responsive pad" alt="Photo" src="/images/site/mapnavi.png" style="display:inline;"></p>
+                                        <h4>Land Allotment Data - Gujarat</h4>
+                                        <p>Land allotment dataset is the set of locality boundaries for the state of Gujrat as defined by Local Government and registered by the land revenue department. 
+                                            The boundaries are aligned to DILRMP resurvey boundary.</p>
+                                        <button class="btn btn-default btn-xs" type="button">
+                                            <i class="fa fa-share"></i>
+                                            Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- eof result -->
+
+                                                        <!-- result -->
+                            <div class="col-md-4">
+                                <div class="box box-info">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Result 5</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Download">
+                                                <i class="ion ion-ios-cloud-download-outline"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Share">
+                                                <i class="ion ion-share"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Link">
+                                                <i class="ion ion-link"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Edit">
+                                                <i class="ion ion-edit"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-toggle="tooltip" type="button" data-original-title="Show Layers">
+                                                <i class="ion ion-navicon"></i>
+                                            </button>
+                                            <button class="btn btn-box-tool" data-widget="collapse" type="button">
+                                                <i class="ion ion-minus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <p class="text-center"><img class="img-responsive pad" alt="Photo" src="/images/site/mapnavi.png" style="display:inline;"></p>
+                                        <h4>Land Parcel Data Service - Gujarat</h4>
+                                        <p>Land parcel spatial data service by Local Government and registered by the land revenue department. 
+                                            Data collection during the Resurvey project in Gujarat State.</p>
+                                        <button class="btn btn-default btn-xs" type="button">
+                                            <i class="fa fa-share"></i>
+                                            Share
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- eof result -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    //Initialize Select2 Elements
+
+
+    //$('#reservation').daterangepicker();
+    //$('#daterange-btn').daterangepicker(
+    //{
+    //    ranges: {
+    //        'Today': [moment(), moment()],
+    //        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+    //        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+    //        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+    //        'This Month': [moment().startOf('month'), moment().endOf('month')],
+    //        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    //    },
+    //    startDate: moment().subtract(29, 'days'),
+    //    endDate: moment()
+    //},
+    //function (start, end) {
+    //    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+    //}
+    //);
+</script>

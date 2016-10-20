@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutBlank.cshtml";
+}
+<div class="login-box">
+    <div class="row text-center"><img class="img-squere text-center" alt="Logo Image" src="~/images/site/logo.PNG"></div>
+    <div class="login-logo">
+        <h3>
+        <a href="#">Welcome to&nbsp;<b>NAME&nbsp;</b>Portal</a></h3>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+
+            <div class="form-group has-feedback">
+                <input id="txtEmail" type="email" class="form-control" placeholder="Email" value="admin">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input id="txtPass" type="password" class="form-control" placeholder="Password" value="admin">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                        <label>
+                            <input type="checkbox">
+                            Remember Me
+                        </label>
+                    </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-xs-4">
+                    <button type="submit" onclick="DoLogin()" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                </div>
+                <!-- /.col -->
+            </div>
+        @*@Html.Partial("_LoginSocialPartial")*@
+
+        <a href="#">I forgot my password</a><br>
+        <a href="~/account/register" class="text-center">Register a new membership</a>
+
+    </div>
+    <!-- /.login-box-body -->
+</div>
+
+<script>
+    function DoLogin() {
+        $.ajax({
+            url: "/Account/CheckLogin", data: { "Email": $("#txtEmail").val(), "Password": $("#txtPass").val() }, success: function (data) {
+                alert(data);
+                if (data != "true") {
+                    alert("Email or Password invalid");
+                }
+                else {
+                    $(location).attr('href', '/Home/Index');
+                }
+            }
+        });
+    }
+</script>
