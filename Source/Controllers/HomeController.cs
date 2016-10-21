@@ -13,5 +13,10 @@ namespace WebPortalMVC.Controllers
             ViewBag.Layout = "~/Views/Shared/Public/_LayoutPublic.cshtml";
             return View();
         }
+        public ActionResult About()
+        {
+            ViewBag.Layout = "~/Views/Shared/Public/_LayoutPublic.cshtml";
+            return View();
+        }
     }
 }

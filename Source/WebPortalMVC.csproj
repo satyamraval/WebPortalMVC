@@ -1408,6 +1408,11 @@
     <Content Include="Views\Shared\Public\_PubMidContentPartial.cshtml" />
     <Content Include="Views\Shared\Public\_PubClientsPartial.cshtml" />
     <Content Include="Views\Shared\Public\_PubFooterPartial.cshtml" />
+    <Content Include="Views\Home\about.cshtml" />
+    <Content Include="Views\Shared\Public\_PubTeamListPartial.cshtml" />
+    <Content Include="Views\Shared\Public\_PubTestimonialPartial.cshtml" />
+    <Content Include="Views\Shared\Public\_PubAboutAgencyPartial.cshtml" />
+    <Content Include="Views\Shared\Public\_PubHeaderWrapInnerPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
