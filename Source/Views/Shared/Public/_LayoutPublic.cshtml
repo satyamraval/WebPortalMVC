@@ -13,6 +13,11 @@
     <!-- Custom styles for this template -->
     <link href="/content/themes/theme_solid/assets/css/style.css" rel="stylesheet">
     <link href="/content/themes/theme_solid/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/template/dist/css/ion.min.css" rel="stylesheet" />
+    <link href="~/Content/template/dist/css/admin.min.css" rel="stylesheet" />
+    @*<link href="~/Content/template/dist/css/skins/_all-skins.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/template/plugins/jvectormap/jquery-jvectormap-1.2.2.css">*@
+    <link rel="stylesheet" href="~/Content/template/plugins/iCheck/square/blue.css">
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,7 +29,7 @@
 </head>
 <body class="hold-transition login-page">
     <div class="wrapper">
-        @Html.Partial("Public/_PubHeaderPartial")
+        @Html.Partial("_HeaderPartial")
         @RenderBody()
     </div>
     	 

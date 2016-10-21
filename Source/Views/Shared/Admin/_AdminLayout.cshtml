@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/template/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/template/plugins/datatables/dataTables.bootstrap.css" rel="stylesheet" />
+
+    
+    <link href="~/Content/template/dist/fa/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/template/dist/css/ion.min.css" rel="stylesheet" />
+    <link href="~/Content/template/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/Content/template/plugins/datepicker/datepicker3.css" rel="stylesheet" />
+    <link href="~/Content/template/plugins/iCheck/all.css" rel="stylesheet" />
+    <link href="~/Content/template/plugins/select2/select2.min.css" rel="stylesheet" />
+    <link href="~/Content/template/dist/css/admin.min.css" rel="stylesheet" />
+    <link href="~/Content/template/dist/css/skins/_all-skins.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/template/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
+    <div class="wrapper">
+        @Html.Partial("_AdminHeaderPartial")
+        @Html.Partial("_AdminSideBarPartial")
+        @RenderBody()
+        @Html.Partial("_AdminFooterPartial")
+        @Html.Partial("_AdminControlSideBarPartial")
+    </div>
+    <script src="~/Content/template/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="~/Content/template/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/template/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/Content/template/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="~/Content/template/plugins/select2/select2.full.min.js"></script>
+    <script src="~/Content/template/plugins/moment/moment.js"></script>
+    <script src="~/Content/template/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="~/Content/template/plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script src="~/Content/template/plugins/fastclick/fastclick.min.js"></script>
+    <script src="~/Content/template/dist/js/app.min.js"></script>
+    <script src="~/Content/template/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="~/Content/template/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="~/Content/template/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="~/Content/template/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="~/Content/template/plugins/chartjs/Chart.min.js"></script>
+    <script src="~/Content/template/dist/js/pages/dashboard2.js"></script>
+    <script src="~/Content/template/dist/js/demo.js"></script>
+    <script type="text/javascript">
+        $(".select2").select2();
+        $('#resource_range').daterangepicker();
+        $('#records_range').daterangepicker();
+        $(function () {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false
+            });
+        });
+    </script>
+</body>
+</html>

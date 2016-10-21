@@ -123,6 +123,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -1375,11 +1376,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LayoutBlank.cshtml" />
-    <Content Include="Views\Shared\_HeaderPartial.cshtml" />
-    <Content Include="Views\Shared\_SideBarPartial.cshtml" />
+    <Content Include="Views\Shared\Admin\_AdminHeaderPartial.cshtml" />
+    <Content Include="Views\Shared\Admin\_AdminSideBarPartial.cshtml" />
     <Content Include="Views\Shared\_ContentPartial.cshtml" />
-    <Content Include="Views\Shared\_FooterPartial.cshtml" />
-    <Content Include="Views\Shared\_ControlSideBarPartial.cshtml" />
+    <Content Include="Views\Shared\Admin\_AdminFooterPartial.cshtml" />
+    <Content Include="Views\Shared\Admin\_AdminControlSideBarPartial.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -1413,13 +1414,15 @@
     <Content Include="Views\Shared\Public\_PubTestimonialPartial.cshtml" />
     <Content Include="Views\Shared\Public\_PubAboutAgencyPartial.cshtml" />
     <Content Include="Views\Shared\Public\_PubHeaderWrapInnerPartial.cshtml" />
+    <Content Include="Views\Shared\Admin\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\Site\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\template\" />
-    <Folder Include="Views\Shared\Admin\" />
+    <Folder Include="Views\Shared\Commons\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
