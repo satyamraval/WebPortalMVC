@@ -10,7 +10,7 @@ namespace WebPortalMVC.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Layout = "~/Views/Shared/Admin/_LayoutAdmin.cshtml"; 
+            ViewBag.Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml"; 
             return View();
         }
     }

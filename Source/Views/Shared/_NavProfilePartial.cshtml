@@ -1,0 +1,17 @@
+﻿@if (Session["user_name"] != null)
+{
+    if (Session["user_name"].ToString() != "")
+    {
+        <li><a href="#" onclick="DoLogout()"><i class="ion ion-log-off"></i>&nbsp;Logout</a></li>
+    }
+    else
+    {
+        <li><a href="~/account/login"><i class="ion ion-log-in"></i>&nbsp;Login</a></li>
+        <li><a href="~/account/Register"><i class="fa fa-user-plus"></i>&nbsp;Register</a></li>
+    }
+}
+else
+{
+    <li><a href="~/account/login"><i class="ion ion-log-in"></i>&nbsp;Login</a></li>
+    <li><a href="~/account/Register"><i class="fa fa-user-plus"></i>&nbsp;Register</a></li>
+}

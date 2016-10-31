@@ -14,6 +14,11 @@ namespace WebPortalMVC
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Routes.MapHttpRoute(
+                name: "UserApi",
+                routeTemplate: "{userid}/{controller}/{id}",
+                defaults: new { userid = "site", id = RouteParameter.Optional }
+            );
         }
     }
 }

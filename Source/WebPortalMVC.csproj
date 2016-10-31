@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1397,7 +1398,6 @@
     <Content Include="Views\Shared\_MetadataPartial.cshtml" />
     <Content Include="Views\Shared\_BrowseByTopicsPartial.cshtml" />
     <Content Include="Views\Shared\ContributeCreate.cshtml" />
-    <Content Include="Views\Shared\_NavBarRightMenuPartial.cshtml" />
     <Content Include="Views\Shared\_NavBarTopMenuPartial.cshtml" />
     <Content Include="Views\Shared\_NavBarTitlePartial.cshtml" />
     <Content Include="Views\Shared\_SideBarUserPanelPartial.cshtml" />
@@ -1416,6 +1416,10 @@
     <Content Include="Views\Shared\Public\_PubHeaderWrapInnerPartial.cshtml" />
     <Content Include="Views\Shared\Admin\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Shared\_NavDefault.cshtml" />
+    <Content Include="Views\Shared\_NavLanguagePartial.cshtml" />
+    <Content Include="Views\Shared\_NavProfilePartial.cshtml" />
+    <Content Include="Views\Shared\_NavSiteTitlePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

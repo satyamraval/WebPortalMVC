@@ -16,7 +16,7 @@
     <link href="~/Content/template/dist/css/ion.min.css" rel="stylesheet" />
     <link href="~/Content/template/dist/css/admin.min.css" rel="stylesheet" />
     @*<link href="~/Content/template/dist/css/skins/_all-skins.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/Content/template/plugins/jvectormap/jquery-jvectormap-1.2.2.css">*@
+        <link rel="stylesheet" href="~/Content/template/plugins/jvectormap/jquery-jvectormap-1.2.2.css">*@
     <link rel="stylesheet" href="~/Content/template/plugins/iCheck/square/blue.css">
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,22 +29,22 @@
 </head>
 <body class="hold-transition login-page">
     <div class="wrapper">
-        @Html.Partial("_HeaderPartial")
+        @Html.Partial("Public/_PubHeaderPartial")
         @RenderBody()
     </div>
-    	 
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>*@
     <script src="/Content/template/plugins/jQuery/jquery-2.2.3.min.js"></script>
     <script src="/content/themes/theme_solid/assets/js/bootstrap.min.js"></script>
-	<script src="/content/themes/theme_solid/assets/js/retina-1.1.0.js"></script>
-	<script src="/content/themes/theme_solid/assets/js/jquery.hoverdir.js"></script>
-	<script src="/content/themes/theme_solid/assets/js/jquery.hoverex.min.js"></script>
-	<script src="/content/themes/theme_solid/assets/js/jquery.prettyPhoto.js"></script>
-  	<script src="/content/themes/theme_solid/assets/js/jquery.isotope.min.js"></script>
-  	<script src="/content/themes/theme_solid/assets/js/custom.js"></script>
+    <script src="/content/themes/theme_solid/assets/js/retina-1.1.0.js"></script>
+    <script src="/content/themes/theme_solid/assets/js/jquery.hoverdir.js"></script>
+    <script src="/content/themes/theme_solid/assets/js/jquery.hoverex.min.js"></script>
+    <script src="/content/themes/theme_solid/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="/content/themes/theme_solid/assets/js/jquery.isotope.min.js"></script>
+    <script src="/content/themes/theme_solid/assets/js/custom.js"></script>
     <script>
         // Portfolio
         (function ($) {
@@ -126,7 +126,22 @@
                 setPortfolio();
             });
         })(jQuery);
-</script>
+    </script>
 
+    <script>
+        function DoLogout() {
+            $.ajax({
+                url: "/Account/DoLogout", data: {}, success: function (data) {
+                    alert(data);
+                    if (data != "true") {
+                        alert("Unable to logout");
+                    }
+                    else {
+                        $(location).attr('href', '/Home/Index');
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 </html>
