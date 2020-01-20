@@ -7,6 +7,6 @@ namespace WebPortalMVC
 {
     public static class Statics
     {
-        public static string SiteTitle = "Sitename"; //
+        public static string SiteTitle = "Sitename"; //111111
     }
 }
